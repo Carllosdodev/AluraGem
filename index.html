@@ -1,72 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
     <title>Geek Project</title>
 </head>
-
 <body>
     <header>
         <h1>Animes do Japão</h1>
     </header>
     <main>
         <section>
-            <input type="text" placeholder="Digite o nome do personagem">
-            <button>Pesquisar</button>
+            <input type="text" placeholder="Digite o nome do anime ou personagem" id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+            <button onclick="limpaPesquisa()">Limpar</button> <!-- Novo botão para limpar -->
         </section>
-        <section class="resultados-pesquisa">
-            <div class="item-resultado">
-                <h2>
-                    <a href="https://www.youtube.com/watch?v=QczGoCmX-pI" target="_blank">Naruto Uzumaki</a>
-                </h2>
-                <p class="descricao-meta">Naruto Uzumaki é um personagem icônico do anime e mangá Naruto, criado por Masashi
-                    Kishimoto. Órfão desde a infância e estigmatizado por abrigar a Nove-Caudas, uma poderosa criatura demoníaca,
-                    Naruto cresce buscando reconhecimento e o sonho de se tornar Hokage, o líder da Vila da Folha e o ninja mais
-                    forte da aldeia.</p>
-                <a href="https://pt.wikipedia.org/wiki/Naruto" target="_blank">Sobre</a>
-            </div>
-            <div class="item-resultado">
-                <h2>
-                    <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE" target="_blank">Saitama</a>
-                </h2>
-                <p class="descricao-meta">Saitama é o protagonista do mangá e anime One-Punch Man, conhecido por sua força sobrehumana que o permite derrotar qualquer oponente com um único soco. Sua vida cotidiana é marcada pela busca por desafios que o desafiem.</p>
-                <a href="https://pt.wikipedia.org/wiki/One-Punch_Man" target="_blank">Sobre</a>
-            </div>
-            
-            <div class="item-resultado">
-                <h2>
-                    <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE" target="_blank">Yuji Itadori</a>
-                </h2>
-                <p class="descricao-meta">Yuji Itadori é o protagonista de Jujutsu Kaisen. Um estudante do ensino médio comum que, ao ingerir um dedo amaldiçoado, se torna um recipiente para o poderoso espírito amaldiçoado Sukuna. Agora, ele luta para proteger a humanidade e encontrar uma maneira de quebrar a maldição.</p>
-                <a href="https://pt.wikipedia.org/wiki/Jujutsu_Kaisen" target="_blank">Sobre</a>
-            </div>
-            
-            <div class="item-resultado">
-                <h2>
-                    <a href="https://www.youtube.com/watch/v=YOUR_VIDEO_ID_HERE" target="_blank">Goku</a>
-                </h2>
-                <p class="descricao-meta">Goku é o protagonista da série Dragon Ball. Um guerreiro Saiyajin que busca constantemente por desafios e batalhas mais fortes. Sua paixão pela luta o leva a explorar o universo e enfrentar diversos inimigos poderosos.</p>
-                <a href="https://pt.wikipedia.org/wiki/Goku" target="_blank">Sobre</a>
-            </div>
-            
-            <div class="item-resultado">
-                <h2>
-                    <a href="https://www.youtube.com/watch/v=YOUR_VIDEO_ID_HERE" target="_blank">Guts</a>
-                </h2>
-                <p class="descricao-meta">Guts é o protagonista da série Berserk. Um guerreiro solitário e brutal, marcado por uma vida cheia de sofrimento e batalhas. Ele vaga pelo mundo em busca de vingança contra a entidade conhecida como Griffith.</p>
-                <a href="https://pt.wikipedia.org/wiki/Berserk_(mangá)" target="_blank">Sobre</a>
-            </div>
-            
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
         </section>
     </main>
     <footer>
-        <p>2024 - Atletas do Brasil. Todos os direitos reservados</p>
-        
+        <p>2024 - Animes do Japão. Todos os direitos reservados</p>
     </footer>
+    <script src="/app/dados.js"></script>
     <script src="/app/app.js"></script>
 </body>
-
 </html>
